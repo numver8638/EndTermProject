@@ -86,7 +86,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>WIN32;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>WIN32;DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -97,7 +97,7 @@
     <ClCompile>
       <WarningLevel>Level3</WarningLevel>
       <Optimization>Disabled</Optimization>
-      <PreprocessorDefinitions>_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+      <PreprocessorDefinitions>DEBUG;_DEBUG;_CONSOLE;%(PreprocessorDefinitions)</PreprocessorDefinitions>
     </ClCompile>
     <Link>
       <GenerateDebugInformation>true</GenerateDebugInformation>
@@ -136,14 +136,19 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="main.c" />
+    <ClCompile Include="Evaluate.c" />
     <ClCompile Include="Lexer.c" />
     <ClCompile Include="LinkedList.c" />
+    <ClCompile Include="Misc.c" />
     <ClCompile Include="Parser.c" />
     <ClCompile Include="VariableTable.c" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="Evaluate.h" />
+    <ClInclude Include="Expression.h" />
     <ClInclude Include="Lexer.h" />
     <ClInclude Include="LinkedList.h" />
+    <ClInclude Include="Misc.h" />
     <ClInclude Include="Parser.h" />
     <ClInclude Include="VariableTable.h" />
   </ItemGroup>
