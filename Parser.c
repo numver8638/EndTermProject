@@ -5,8 +5,6 @@
 #include <stdlib.h>
 #include <string.h>
 
-#include "Lexer.h"
-
 /*
  * ExpressionRef CreateExpression(enum ExpressionType type)
  * - 지정된 타입의 새로운 수식트리를 생성합니다.
