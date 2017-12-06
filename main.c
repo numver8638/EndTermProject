@@ -183,6 +183,8 @@ int main(int argc, char* argv[]) {
 
 		if (length < 0) break;
 
+		if (length == 0) continue;
+
 		// 내부 커맨드
 		if (strcmp(buffer, "exit") == 0 || strcmp(buffer, "quit") == 0) {
 			// 종료 커맨드
